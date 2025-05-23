@@ -1,5 +1,5 @@
 function gerar(pdf = false, print = false) {
-    for (let i = 1; i <= 4; i++)
+    for (let i = 1; i <= 8; i++)
         document.getElementById(`relatorio${i}`).textContent = document.getElementById(`input${i}`).value;
 
     const relatorio = document.getElementById('relatorio');

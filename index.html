@@ -16,6 +16,7 @@
         </header>
 
         <form id="cadastro">
+            <!-- Campos já existentes -->
             <div class="campo">
                 <label for="input1">Nome da Música</label>
                 <input type="text" placeholder="Ex: Vibe do Verão" id="input1" />
@@ -36,13 +37,33 @@
                 <input type="email" placeholder="Ex: artista@email.com" id="input4" />
             </div>
 
+            <!-- Novos campos -->
+            <div class="campo">
+                <label for="input5">Ano de Lançamento</label>
+                <input type="number" placeholder="Ex: 2024" id="input5" />
+            </div>
+
+            <div class="campo">
+                <label for="input6">Duração da Música (minutos)</label>
+                <input type="text" placeholder="Ex: 3:45" id="input6" />
+            </div>
+
+            <div class="campo">
+                <label for="input7">Link para Ouvir</label>
+                <input type="url" placeholder="Ex: https://youtube.com/..." id="input7" />
+            </div>
+
+            <div class="campo">
+                <label for="input8">Letra da Música</label>
+                <textarea placeholder="Insira a letra completa da música" id="input8"></textarea>
+            </div>
+
             <div class="botoes">
                 <button type="button" onclick="gerar()">Visualizar</button>
                 <button type="button" onclick="gerar(true)">Gerar PDF</button>
                 <button type="button" onclick="gerar(false, true)">Imprimir</button>
             </div>
         </form>
-
 
         <section id="relatorio">
             <h2>Relatório de Cadastro</h2>
@@ -57,6 +78,18 @@
             </p>
             <p><strong>Contato:</strong>
             <div id="relatorio4"></div>
+            </p>
+            <p><strong>Ano de Lançamento:</strong>
+            <div id="relatorio5"></div>
+            </p>
+            <p><strong>Duração:</strong>
+            <div id="relatorio6"></div>
+            </p>
+            <p><strong>Link para Ouvir:</strong>
+            <div id="relatorio7"></div>
+            </p>
+            <p><strong>Letra da Música:</strong>
+            <div id="relatorio8"></div>
             </p>
         </section>
 

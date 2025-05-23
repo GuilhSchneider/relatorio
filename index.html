@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <title>Cadastro de Música - PlayHits</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastro de Música - <span class="brand">PlayHits</span></h1>
+        </header>
+
+        <form id="cadastro">
+            <div class="campo">
+                <label for="input1">Nome da Música</label>
+                <input type="text" placeholder="Ex: Vibe do Verão" id="input1" />
+            </div>
+
+            <div class="campo">
+                <label for="input2">Artista ou Banda</label>
+                <input type="text" placeholder="Ex: DJ Solar" id="input2" />
+            </div>
+
+            <div class="campo">
+                <label for="input3">Gênero Musical</label>
+                <input type="text" placeholder="Ex: Pop, Funk, Rock" id="input3" />
+            </div>
+
+            <div class="campo">
+                <label for="input4">E-mail para Contato</label>
+                <input type="email" placeholder="Ex: artista@email.com" id="input4" />
+            </div>
+
+            <div class="botoes">
+                <button type="button" onclick="gerar()">Visualizar</button>
+                <button type="button" onclick="gerar(true)">Gerar PDF</button>
+                <button type="button" onclick="gerar(false, true)">Imprimir</button>
+            </div>
+        </form>
+
+
+        <section id="relatorio">
+            <h2>Relatório de Cadastro</h2>
+            <p><strong>Nome da Música:</strong>
+            <div id="relatorio1"></div>
+            </p>
+            <p><strong>Artista ou Banda:</strong>
+            <div id="relatorio2"></div>
+            </p>
+            <p><strong>Gênero Musical:</strong>
+            <div id="relatorio3"></div>
+            </p>
+            <p><strong>Contato:</strong>
+            <div id="relatorio4"></div>
+            </p>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

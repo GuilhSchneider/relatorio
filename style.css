@@ -1,0 +1,182 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo principal */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px 0;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 750px;
+  margin: 0 auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+header h1 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.brand {
+  color: #1a73e8;
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* Formulário */
+form .campo {
+  margin-bottom: 18px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #444;
+  font-size: 14px;
+}
+
+.campo input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #dadce0;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border 0.2s;
+}
+
+.campo input:focus {
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.1);
+}
+
+/* Botões */
+.botoes {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.botoes button {
+  padding: 10px 18px;
+  font-size: 14px;
+  background-color: #1a73e8;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.botoes button:hover {
+  background-color: #1765cc;
+  transform: translateY(-1px);
+}
+
+.botoes button:active {
+  transform: translateY(0);
+}
+
+/* Seção de Relatório */
+#relatorio {
+  background: #f8f9fa;
+  border: 1px solid #aeafb181;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-left: 35px;
+  margin-right: 30px;
+  height: 100%;
+  width: 90%;
+}
+
+#relatorio h2 {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ccc;
+}
+
+#relatorio p {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+#relatorio strong {
+  color: #444;
+  font-weight: 600;
+}
+
+#relatorio div {
+  margin-top: 3px;
+  padding-left: 15px;
+  color: #555;
+  font-style: italic;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .botoes {
+    flex-direction: column;
+  }
+
+  .botoes button {
+    width: 100%;
+  }
+}
+
+/* Estilo para impressão */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #relatorio,
+  #relatorio * {
+    visibility: visible;
+  }
+
+  #relatorio {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: white;
+    padding: 20mm;
+  }
+}

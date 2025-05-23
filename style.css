@@ -165,7 +165,7 @@ form .campo {
   }
 
   #cadastro{
-    display:none;
+    display: none;
   }
 
   #relatorio,
@@ -177,8 +177,8 @@ form .campo {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    border: none;
+    width: 90%;
+    border: 1px solid #aeafb181;
     box-shadow: none;
     background: white;
     padding: 20mm;

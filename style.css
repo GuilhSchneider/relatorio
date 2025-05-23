@@ -164,6 +164,10 @@ form .campo {
     visibility: hidden;
   }
 
+  #cadastro{
+    display:none;
+  }
+
   #relatorio,
   #relatorio * {
     visibility: visible;
